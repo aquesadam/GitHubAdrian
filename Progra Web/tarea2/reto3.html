@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<title>Reto 3</title>
+<link rel="shortcut icon" type="image/jpg" href="galeria/100.png"/>
+<style>
+    html{
+        height: 100%;
+    }
+    body{
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(10,50,70, 100)
+        ),url(galeria/fondo.jpg);
+        background-size: cover;
+}
+    .container{
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="container text-center bg-light">
+        <div class="row">
+        <div class="col-sm">
+            <div class="pt-2"></div>
+            <h1 class="text-primary">RETO NÚMERO 3</h1>
+            <h2 class="text-primary">REPORTE DE OPERACIONES BÁSICAS</h2><hr/>
+            <div class="pt-5"></div>
+
+            <h3>Digite dos valores numéricos:</h3> <br>
+            <div class="formato1">
+                <input name="valor1" type="text" id="valor1">
+                <input name="valor2" type="text" id="valor2"><br><br>
+                <input type="button" class="btn btn-secondary" value="Calcular" onclick="calcular()">
+                <input type="button" class="btn btn-secondary" id="reiniciar" value="Reiniciar" onclick="reiniciar()">
+                <br><br>
+                <h3 id="resultados"></h3>
+            </div>
+            <br>
+        </div>
+        
+
+    <script>
+    function calcular(valor1, valor2){
+        var valor1 = parseInt(document.getElementById("valor1").value);
+        var valor2 = parseInt(document.getElementById("valor2").value);
+
+        var suma = valor1 + valor2;
+        var resta = valor1 - valor2;
+        var multiplicacion = valor1 * valor2;
+        var division = valor1 / valor2;
+        var total = suma+resta+multiplicacion+division;
+
+        if (isNaN(valor1) && isNaN(valor2)){
+            document.getElementById("resultados").innerHTML = "Error. Por favor utilice solo números."
+        } else{
+            document.getElementById("resultados").innerHTML = "<b>Resultados</b><br><br>Suma: "+suma+ "<br>Resta: " +resta+ "<br>Multiplicación: " +multiplicacion+ "<br>División: " +division+ "<br><b>TOTAL: </b>" +total;
+        }
+    }   
+
+    function reiniciar(){
+        document.getElementById('valor1').value = "";
+        document.getElementById('valor2').value = "";
+        document.getElementById("resultados").innerHTML = "";
+    }
+
+
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+</body>
+</html>

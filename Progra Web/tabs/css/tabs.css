@@ -1,0 +1,61 @@
+/* propiedades de la caja del tabulador */
+.tab {
+  overflow: hidden;
+  border: 2px solid #ccc;
+  border-radius: 10px 10px 0 0;
+  background-color: #d7f3bd;
+}
+
+p{
+  font-size: 20px;
+  text-align: left;
+}
+
+.tam1{
+  font-size: 24px;
+}
+
+/* estilo de los tabs botones que se utilizan para abrir el contenido de la pestaña */
+.tab button {
+  background-color: inherit;
+  float: left;
+  color:#000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* cambia de color del boton al pasar el mouse */
+.tab button:hover {
+  background-color: rgb(44, 204, 44);
+  color:#fff;
+}
+
+/* Crear una clase tablink activa / actual */
+.tab button.active {
+  background-color: #d7f3bd;
+  color:#fff;
+}
+
+/* Aplicar estilo al contenido de cada pestaña tab */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 2px solid #ccc;
+  border-top: none;
+  background: #eee;
+  border-radius: 0 0 10px 10px;
+}
+
+/*animacion*/
+/* El efecto de desvanecimiento tarda 1 segundo */
+.tabcontent {
+  animation: fadeEffect 1s; 
+}
+/* Pasa de cero a opacidad total */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

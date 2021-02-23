@@ -1,0 +1,131 @@
+
+
+/* estilo de la imagen utilizada para activar el modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* opacidad al pasar el mouse sobre la foto */
+#myImg:hover {
+  opacity: 0.5;
+}
+
+
+/* modal (fondo) */
+.modal {
+  display: none; 
+  position: fixed; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  /*width: 100%; 
+  height: 100%; */
+  overflow: auto; /* habilitar el scroll */
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+}
+
+
+/* contenido modal (imagen) */
+.modal-content {
+  margin: auto;
+  display: block;
+  margin-top: 10px;
+  /*width: 40%;*/
+  /*tamaño de la foto ancho*/
+  max-width: 80%;
+}
+
+
+/* título de la imagen modal - Igual ancho que la imagen */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 0;
+  height: 150px;
+}
+
+
+/* agregar animación CSS en el modo modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {
+    transform:scale(0)
+  }
+  to {
+    transform:scale(1)
+  }
+}
+
+
+/*botón cerrar */
+.close {
+  position: absolute;
+  top: -10px;
+  right: 35px;
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+  transition: 0.3s;
+  background-color: #000;
+}
+.close:hover,.close:focus {
+  color: yellow; 
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* 100% de ancho de imagen en pantallas más pequeñas */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.lightbox {
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: scroll;
+  position: fixed;
+  display: none;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.lightbox-container {
+  position: relative;
+  max-width: 960px;
+  margin: 10% auto;
+  padding: 0 3%;
+  height: auto;
+  z-index: 10;
+}
+.lightbox-content {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+}
+.lightbox-close {
+  text-transform: uppercase;
+  position: absolute;
+  right: -62px;
+  max-width: 960px;
+  top: -40px;
+  /*display: block;*/  
+}
+
+@media (max-width: 575px){
+  .lightbox-container {
+  	 margin-top: 150px !important;
+  }
+}

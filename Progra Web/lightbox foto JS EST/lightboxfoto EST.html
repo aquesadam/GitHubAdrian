@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ 
+ <!-- CARGA HOJA DE ESTILO LIGHBOX FOTO -->
+<link rel="stylesheet" href="css/lightbox.css">
+
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  
+  <title>CENFOTEC-ProfeFrank</title>
+</head>
+
+
+<body id="inicio">
+<div class="container fijo navbar-light bg-secondary"> 
+<nav class="navbar navbar-expand-lg sticky-top">
+<a class="navbar-brand text-white" href="modal.html">Empresa XYZ</a> 
+  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto text-center">
+      <li class="nav-item active">
+        <a data-scroll class="nav-link text-white" href="#inicio">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a data-scroll class="nav-link" href="#">Sección1</a>
+      </li>
+      <li class="nav-item">
+        <a data-scroll class="nav-link" href="#">Sección2</a>
+      </li>
+      <li class="nav-item">
+        <a data-scroll class="nav-link" href="#">Sección3</a>
+      </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="desplegable1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" name="myDropdown">Extras
+        </a>
+        <div class="dropdown-menu text-center" aria-labelledby="desplegable1">
+          <a class="dropdown-item" href="#">Diseño1</a>
+          <a class="dropdown-item" href="#">Diseño2</a>
+          <a class="dropdown-item" href="#">Diseño3</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Ver PDF</a>
+        </div>
+    </li>
+ 	<li class="nav-item">
+        <a data-scroll class="nav-link" href="#">Contacto</a>
+    </li> 
+    </ul>
+</div>
+</nav>
+ </div> 
+
+
+
+<header class="container-fluid text-center color1">
+  <h1 class="tp">CENFOTEC</h1> 
+  <h2 class="tp">DESARROLLO WEB 2021</h2>
+</header> 
+
+
+
+<!-- Seccion1 -->
+<section id="s1" class="container-fluid fondo1 text-center">
+<div class="container">
+<h2 class="titulos1 pt-5">Información</h2>
+
+<!-- lightbox fotografico  -->
+<div class="pt-5">
+  <!-- activar el modal -->
+  <img id="myImg" src="imagenes/logo.jpg" alt="Publicación JS" style="max-width: 300px">
+  <!-- ID modal -->
+  <div id="modal1" class="modal">
+    <!-- botón de cierre del modal -->
+    <span class="close">&times;</span>
+    <!-- contenido del modal -->
+    <img class="modal-content" id="img01">
+    <!-- título del modal -->
+    <div id="caption"></div>
+  </div>
+</div>
+
+
+
+</div>
+</section>
+
+
+
+<!-- Seccion2 -->
+<section id="s2" class="container-fluid fondo2 text-center">
+  <h2 class="titulos1 pt-4">Bootstrap?</h2>
+  <p>
+    Desarrollo de sitios web responsivos <br>
+     compatibles con dispositivos moviles Smartphone y Tablet.
+  </p>
+  <a class="btn btn-outline-success btn-lg" href="#" role="button">
+  Clic aquí</a>
+</section>
+
+
+<!-- Seccion3 -->
+<section id="s3" class="container-fluid fondo3 text-center">    
+  <h2 class="titulos1 margin">Lenguajes Base?</h2><br>
+ <div class="container">
+  <div class="row">
+    
+    <div class="col-md-4">
+      <h2 class="pb-4">Lenguaje HTML5</h2>
+      <img src="imagenes/lenguaje1.png" class="img-fluid abc" alt="html5">
+      <br><br>
+       <a class="btn btn-warning btn-lg" href="#" target="blank" role="button">
+   Clic aquí</a>
+    </div>
+
+    <div class="col-md-4"> 
+      <h2 class="pb-4">Lenguaje CCS3</h2>
+    <img src="imagenes/lenguaje2.png" class="img-fluid" alt="css3">
+        <br><br>
+        <a class="btn btn-warning btn-lg" href="#" target="blank" role="button">
+   Clic aquí</a>
+    </div>
+
+    <div class="col-md-4"> 
+      <h2 class="pb-4">Lenguaje JAVA SCRIPT</h2>      
+      <img src="imagenes/lenguaje3.png" class="img-fluid" alt="Java Script">
+              <br><br>
+        <a class="btn btn-warning btn-lg" href="#" target="blank" role="button">
+   Clic aquí</a>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+<footer id="s4" class="container-fluid pie fondo4 text-center">
+  <h2 class="titulos1">Derechos Reservados</h2> 
+  <h3 class="titulos2">CENFOTEC 2021</h3>
+  <br><br>
+  <div class="espacio animacion1">
+   <a href="http://www.facebook.com" target="blank">
+     <i class="fab fa-facebook fa-4x" style="color:#fff"></i>
+    </a>  
+  </div>
+  <div class="espacio animacion1">
+    <a href="http://www.twitter.com" target="blank">
+    <i class="fab fa-twitter-square fa-4x" style="color:#fff"></i>
+    </a>
+  </div>  
+  <div class="espacio animacion1">
+    <a href="http://www.youtube.com" target="blank">  
+    <i class="fab fa-youtube-square fa-4x" style="color:#fff"></i>
+    </a>
+  </div>  
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+<!-- CARGA DEL LIGHBOX FOTO JS -->
+<script src="js/lightbox.js"></script>
+
+
+
+  </body>
+</html>
+
+

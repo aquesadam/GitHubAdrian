@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/./flexbox/intro/css/reset.css"> -->
+    <link rel="stylesheet" href="/./flexbox/intro/css/index.css">
+    <title>Introducción</title>
+</head>
+
+<body>
+<section>
+    <h1>Formato visual</h1>
+    <p>Es la forma mediante la cual los elementos se acomodan dentro de la página.</p>
+    <p>Existen dos formas principales en las que los elementos se pueden acomodar:</p>
+    <dl>
+        <dt>Elementos en línea</dt>
+        <dd>Son aquellos que se acomodan uno al lado del otro. Por ejemplo los elementos de enlace, input, label, span, etc.</dd>
+        <dt>Elementos en bloque</dt>
+        <dd>Son aquellos elementos que se acomodan por defecto uno abajo del otro y ocupan el 100% del ancho de la página.</dd>
+    </dl>
+    <p>Adicionalmente, existen otras posibilidades de modificar el formato visual con los valores inline-block, list, table, etc.</p>
+
+    <h2>Flexbox</h2>
+    <p>Es el formato visual que se ha incluido más recientemente y permite crear páginas web más fluidas y además provee múltiples facilidades para acomodar los elementos dentro de una página.</p>
+</section>
+
+<section>
+    <h2>Sin Flex</h2>
+    <div class="sin-flex">
+        <div class="col col-a"><span>A</span></div>
+        <div class="col col-b"><span>B</span></div>
+        <div class="col col-c"><span>C</span></div>
+        <div class="col col-d"><span>D</span></div>
+        <div class="col col-e"><span>E</span></div>
+    </div>
+
+
+    <h2>Con Flex</h2>
+    <div class="con-flex">
+        <div class="col col-a"><span>A</span></div>
+        <div class="col col-b"><span>B</span></div>
+        <div class="col col-c"><span>C</span></div>
+        <div class="col col-d"><span>D</span></div>
+        <div class="col col-e"><span>E</span></div>
+    </div>
+    <p>Al usar un display:flex los elementos se acomodan con respecto a su eje principal, que por defecto se conoce como "flex-direction: row", los elementos se acomodan de izquieda a derecha.</p>
+</section>
+
+<section>
+    <h2>Cambiando la dirección del eje principal</h2>
+    <h3>Flex direction: row</h3>
+    <div class="con-flex">
+        <div class="col col-a"><span>A</span></div>
+        <div class="col col-b"><span>B</span></div>
+        <div class="col col-c"><span>C</span></div>
+        <div class="col col-d"><span>D</span></div>
+        <div class="col col-e"><span>E</span></div>
+    </div>
+
+    <h3>Flex direction: column</h3>
+    <div class="con-flex-col">
+        <div class="col col-a"><span>A</span></div>
+        <div class="col col-b"><span>B</span></div>
+        <div class="col col-c"><span>C</span></div>
+        <div class="col col-d"><span>D</span></div>
+        <div class="col col-e"><span>E</span></div>
+    </div>
+</section>
+</body>

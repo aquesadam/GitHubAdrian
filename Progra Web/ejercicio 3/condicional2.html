@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Práctica Javascript</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1 class="text-center">Condicional 2</h1>
+    </div>
+
+    <script>
+      var edad=prompt('Escriba su edad');
+      edad=parseInt(edad);
+
+      var ciudad=prompt('Escriba donde vive');
+
+      if(edad >= 18){
+        console.log('Usted es mayor de edad.');
+        if(ciudad=='Alajuela') {
+          console.log('Usted vive en '+ciudad);
+        }
+        
+        else if(ciudad=='Heredia') {
+          console.log('Usted vive en '+ciudad);
+        }
+
+        else if(ciudad=='Cartago') {
+          console.log('Usted vive en '+ciudad);
+        }
+      }
+
+      else{
+        console.log('Usted es menor de edad.');
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>  
+  </body>
+</html>

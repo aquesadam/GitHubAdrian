@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>Introducción al DOM</title>
+</head>
+
+<body>
+    <h1>Introducción al DOM</h1>
+    <p>Qué es el DOM?</p>
+    <!-- Los 3 ID que tienen el cobtrol del objeto a cambiar -->
+
+    <ul id="dom">
+        <li id="documento">Document</li>
+        <li id="objeto">Object</li>
+        <li id="modelo">Model</li>
+    </ul>
+
+    <!-- 3 Botones con 3 ID que controlan el idioma al dar click al botón -->
+    <button type="button" name="button" id="spanish">Español</button>
+    <button type="button" name="french" id="french">Francés</button>
+    <button type="button" name="english" id="english">Inglés</button>
+
+    <script>
+        document.getElementById("spanish").onclick = function() {
+            //Cambia el contenido a Español
+            document.getElementById("documento").innerHTML = "Documento";
+            document.getElementById("objeto").innerHTML = "Objeto";
+            document.getElementById("modelo").innerHTML = "Modelo";
+        }
+
+        document.getElementById("french").onclick = function() {
+            //Cambia el contenido a Francés
+            document.getElementById("documento").innerHTML = "Document";
+            document.getElementById("objeto").innerHTML = "Objet";
+            document.getElementById("modelo").innerHTML = "Modele";
+        }
+
+        document.getElementById("english").onclick = function() {
+            //Cambia el contenido a Inglés
+            document.getElementById("documento").innerHTML = "Document";
+            document.getElementById("objeto").innerHTML = "Object";
+            document.getElementById("modelo").innerHTML = "Model";
+        }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+</body>
+</html>

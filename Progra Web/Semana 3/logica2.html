@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<title>Lógica #2</title>
+<style>
+    .formato1{
+        font-size: 24px;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container text-center bg-info"> 
+
+        <div class="row">
+        <div class="col-sm-6">
+            <div class="pt-5"></div>
+            <h1 class="text-white">CASO LOGICO CONDICIONAL</h1>
+            <div class="pt-5"></div> 
+
+            <h3>Digite el valor de la escala:</h3> <br>
+            <div class="formato1">
+                <input name="escala_txt" type="text" id="escala_txt" /> <br><br>
+                <input type="button" class="btn btn-light" value="Evaluar" onclick="evalua();">
+                <input type="button" class="btn btn-light" id="limpiar" value="Limpiar" onclick="limpiar();">
+                <br><br>
+                <p id="resultado"></p>
+            </div>
+            <br><br>
+        </div> 
+
+        <div class="col-sm-6"> 
+            <div class="pt-5"></div> 
+        <!-- cargar imagenes y ocultarlas para que NO se miren al inicio-->
+        <div id="ima1" style="display: none">
+            <img src="excelente.png" alt="excelencia">
+        </div>
+        <div id="ima2" style="display: none">
+            <img src="muybueno.png" alt="muybueno">
+        </div> 
+        <div id="ima3" style="display: none">
+            <img src="malo.png" alt="malo"> 
+        </div>
+        <div id="ima4" style="display: none">
+            <img src="muymalo.png" alt="muymalo">
+        </div>
+        <div id="ima5" style="display: none">
+            <img src="regular.png" alt="regular">
+        </div>
+        <div id="ima6" style="display: none">
+            <img src="muymalo.png" alt="muy malo">
+        </div>
+        </div>
+        <!-- cierre del row--> 
+    </div> 
+
+
+    <script>
+        function evalua(){ 
+        var escala = document.getElementById('escala_txt').value;
+        var resultado = document.getElementById('resultado');
+        
+        
+        if (escala=="") {
+            alert("El campo esta vacio. Digite un valor por favor...")
+            return false;
+         }else 
+         if(escala>=11){
+            resultado.innerHTML = 'NO EXISTE EVALUACION';
+            return false;
+        }else{
+        if (escala==10){
+            resultado.innerHTML = 'EXCELENTE';
+            document.getElementById("ima1").innerHTML = '<img src="excelente.png" alt="excelencia">';
+            document.getElementById("ima1").style.display = 'block';
+        }else{
+        if (escala==9){
+            resultado.innerHTML = 'MUY BUENO';
+            document.getElementById("ima2").innerHTML = '<img src="muybueno.png" alt="Muy bueno">';
+            document.getElementById("ima2").style.display = 'block';
+        }else{
+        if (escala==8){
+            resultado.innerHTML = 'BUENO';
+            document.getElementById("ima3").innerHTML = '<img src="bueno.png" alt="Bueno">';
+            document.getElementById("ima3").style.display = 'block';
+        }else{
+        if (escala==7){
+            resultado.innerHTML = 'REGULAR';
+            document.getElementById("ima4").innerHTML = '<img src="regular.png" alt="regular">';
+            document.getElementById("ima4").style.display = 'block';
+        }else{
+        if (escala==6){
+            resultado.innerHTML = 'MALO';
+            document.getElementById("ima5").innerHTML = '<img src="malo.png" alt="Malo">';
+            document.getElementById("ima5").style.display = 'block';
+        }else{
+            resultado.innerHTML = 'MUY MAL0';
+            document.getElementById("ima6").innerHTML = '<img src="muymalo.png" alt="Muy malo">';
+            document.getElementById("ima6").style.display = 'block';
+    }
+    }
+    }
+    }
+    }
+    }
+    //cierre de la función
+}
+</script>
+
+<script src="logica2.js"></script>
+        
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+</body>
+</html>

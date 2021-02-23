@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link rel="stylesheet" href="lightbox.css">
+<title>Reto 7</title>
+<link rel="shortcut icon" type="image/jpg" href="galeria/chainsaw.png"/>
+<style>
+    body{
+        background-image: url(video/bakground.png);
+        background-size: cover;
+    }
+    .container{
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+</style>
+</head>
+
+<body>
+    <section>
+    <div class="container text-center bg-dark">
+            <div class="pt-2"></div>
+            <h1 class="text-danger">RETO NÚMERO 7</h1><br>
+            <h2 class="text-danger">VIDEO CONTROLADO POR HTML</h2><hr/>
+            <div class="pt-3"></div>
+            <div class="video">
+                <video id="videoYT" width="760" height="450">
+                    <source src="video/chainsawman.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- Botones controladores -->
+        <button class="btn btn-danger btn-lg" onclick="reproducir()">Reproducir</button><br><br>
+        <button class="btn btn-outline-danger" onclick="pausar()">Pausar</button>
+        <button class="btn btn-outline-danger" onclick="detener()">Reiniciar</button>
+        <button class="btn btn-outline-danger" id="entrar" type="button" name="button">Fullscreen</button>
+        <br><br>
+        </div>
+        </section>
+        
+
+    <section>
+        <div class="container text-center bg-dark">
+            <br><br>
+        <h2 class="text-danger">LIGHTBOX FOTOGRÁFICO</h2><hr/>
+        <!-- lightbox fotografico  -->
+        <!-- activar el modal -->
+        <img id="myImg" src="galeria/volumenes.jpg" alt="CHAINSAWMAN - PORTADAS VOLÚMENES I-VIII" style="max-width: 760px">
+        <!-- ID modal -->
+        <div id="modal1" class="modal">
+            <!-- botón de cierre del modal -->
+            <span class="close">&times;</span>
+            <!-- contenido del modal -->
+            <img class="modal-content" id="img01">
+            <!-- título del modal -->
+            <div id="caption"></div>
+        </div>
+        <br><br>
+        </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container text-center bg-dark">
+            <br><br>
+        <h2 class="text-danger">LIGHTBOX DE VIDEO</h2><hr/>
+            <div id="container">
+                <h4 class="text-danger">ANIMACIÓN FAN CHAINSAWMAN</h2>
+                <div class="pt-2"></div>
+                <button id="boton" onclick="ejecutar('video','youtube')" class="cursor btn btn-danger">Ver vídeo</button>
+            </div>
+            <br>
+            
+            <!-- aqui va el codigo del lighbox video youtube -->
+            <div id="video" class="lightbox" onclick="ocultar('video','youtube')">
+              <div class="lightbox-container">  
+                <div class="lightbox-content">      
+                  <button onclick="ocultar('video','youtube')" class="lightbox-close cursor btn btn-outline-danger">
+                    Cerrar | ✕
+                  </button>
+                  <div class="video-container">
+                    <!-- agregar la terminacion ?showinfo=0" -->
+                          <iframe id="youtube" width="960" height="540" src="https://www.youtube.com/embed/sI7G-Hv-460?showinfo=0" allowfullscreen></iframe>
+                  </div>            
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <br>
+
+
+
+    <!--Botones de función-->
+    <script>
+    window.reproducir = function(){
+        document.getElementById("videoYT").play();
+    };
+    window.pausar = function(){
+        document.getElementById("videoYT").pause();
+    };
+    window.detener = function(){
+        document.getElementById("videoYT").currentTime=0;
+    };
+    </script>
+
+    <!-- Fullscreen -->
+    <script>
+        var element = document.getElementById("videoYT");
+        var fullscreen = document.getElementById("entrar");
+
+        fullscreen.addEventListener("click",function(){
+            if(element.requestFullscreen){
+                element.requestFullscreen();
+            } else if (element.webkitRequestFullscreen){
+                element.webkitRequestFullscreen();
+            } else if (element.mozRequestFullscreen){
+                element.mozRequestFullscreen();
+            } else if (element.msRequestFullscreen){
+                element.msRequestFullscreen();
+            }
+        });
+    </script>
+
+
+
+    <!-- Controlador Lightbox fotográfico -->
+    <script>
+    var modal = document.getElementById("modal1");
+
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+
+    img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+
+    captionText.innerHTML = this.alt;
+    }
+
+    var span = document.getElementsByClassName("close")[0];
+
+    span.onclick = function(){
+    modal.style.display = "none";
+    }
+    </script>
+    
+    <!-- COntrolador Lightbox de video -->
+    <script>
+    //funcion para revelar el lightbox y agregar reproducción automática de youtube
+        function ejecutar(div,video_id){
+        var video = document.getElementById(video_id).src;
+    //adicionar el autoplay URL
+        document.getElementById(video_id).src = video+'&autoplay=1';
+        document.getElementById(div).style.display = 'block';
+}
+
+//Ocultar la caja y eliminar la reproducción automática de youtube
+//los que están en paréntesis son 2 parámetros: desactivar autoplay y que el video
+    function ocultar(div,video_id){
+        var video = document.getElementById(video_id).src;
+    //remover el autoplay URL
+        var cleaned = video.replace('&autoplay=1','');
+        document.getElementById(video_id).src = cleaned;
+        document.getElementById(div).style.display = 'none';
+    }
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+</body>
+</html>

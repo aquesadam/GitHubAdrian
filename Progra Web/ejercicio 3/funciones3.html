@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Práctica Javascript</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1 class="text-center">Funciones básicas</h1>
+      
+      <div class="text-center">
+        <form action="">
+          Escriba el valor1: <input type='text' id='num1' name='var1'>
+          <br>
+          Escriba el valor2: <input type='text' id='num2' name='var2'>
+          <br>
+          <input type='button' value='Sumar' onclick='suma();'>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      var suma = function(numero1, numero2){
+        var numero1=parseFloat(document.getElementById('num1').value);
+        var numero2=parseFloat(document.getElementById('num2').value);
+        var resultado = numero1+numero2;
+        console.log(resultado);
+        alert(resultado);
+        resultado=document.write(resultado);
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>  
+  </body>
+</html>

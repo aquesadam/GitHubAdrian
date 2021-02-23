@@ -1,0 +1,132 @@
+.cursor {
+	cursor: pointer;
+}
+p {
+	font-size: 22px;
+}
+.tp {
+	font-size: 50px;
+	color: purple;
+	padding-top: 50px;
+}
+.titulos1 {
+	font-size: 40px;
+}
+.titulos2 {
+	font-size: 30px;
+}
+.bordes {
+	border-radius: 30px;
+}
+.color1 {
+	color: #000;
+}
+.fijo {
+	position: sticky; /*GOOGLE*/
+	position: fixed; /*IE*/
+	max-width: 100%;
+	z-index: 1000;
+}
+
+/* MENU RESPONSIVE */
+.navbar {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 0;
+	font-size: 14px;
+	letter-spacing: 5px;
+	color: #000;
+}
+.navbar-nav li a {
+	text-decoration: none; 
+	line-height: 20px;
+	font-size: 16px;
+	padding: 15px 10px 15px 10px;
+}
+.navbar-nav li a:hover {
+	color: #fff !important;
+	background-color: purple !important;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* MENU HAMBURGUESA */
+.navbar-toggler {
+	background-color: purple;
+}
+.navbar-toggler:hover {
+	background-color: #e2e2e2;
+}
+/*recuadro*/
+.custom-toggler.navbar-toggler {
+	border-color: cyan;
+}
+.custom-toggler .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler .navbar-toggler-icon:hover {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* espaciado entre secciones 90px sin logo en la parte superior */
+.container-fluid {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.fondo1 {
+	background-color: #e2e2e2;
+	color: #000000;
+}
+.fondo2 {
+	background-color: #474e5d;
+	color: #ffffff;
+}
+.fondo3 {
+	background-color: #ffffff;
+	color: #555555;
+}
+.fondo4 {
+	background-color: #2f2f2f;
+	color: #fff;
+}
+
+.go-top {
+	position: fixed;
+	bottom: 1em;
+	right: 1em;
+	text-decoration: none;
+	padding: 1em;
+	border-radius: 3px;
+}
+.go-top img:hover {
+	transform: scale(2);
+	transition: all 0.8s;
+}
+
+.pie {
+	text-align: center;
+	color: #ffffff;
+	line-height: 30px;
+	padding: 80px 0 20px 0;
+}
+
+.espacio {
+	display: inline-block;
+	margin: 0px 15px 0px 15px;
+}
+
+div.animacion1:hover i {
+	transition: all 1s ease-in-out;
+	transform: rotate(360deg);
+}
+div.animacion2:hover i {
+	transition: all 1s ease-in-out;
+	transform: rotate(360deg);
+	color: cyan;
+}
+div.animacion3:hover i::before {
+	transition: all 1s ease-in-out;
+	color: cyan;
+}

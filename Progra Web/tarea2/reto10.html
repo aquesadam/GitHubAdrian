@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<title>Reto 10</title>
+<link rel="shortcut icon" type="image/jpg" href="galeria/100.png"/>
+<style>
+    html{
+        height: 100%;
+    }
+    body{
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(10,50,70, 100)
+        ),url(galeria/fondo.jpg);
+        background-size: cover;
+}
+    .container{
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="container text-center bg-light">
+        <div class="row">
+        <div class="col-sm">
+            <div class="pt-2"></div>
+            <h1 class="text-primary">RETO NÚMERO 10</h1>
+            <h2 class="text-primary">CLASIFICACIÓN DE ACUERDO A CÓDIGO</h2><hr/>
+            <div class="pt-5"></div>
+
+            <h3>Digite su código de empleado:</h3> <br>
+            <div class="formato1">
+                <input name="codigo" type="text" id="codigo">
+                <input type="button" class="btn btn-secondary" value="Calcular" onclick="calcular()">
+                <input type="button" class="btn btn-secondary" id="reiniciar" value="Reiniciar" onclick="reiniciar()">
+                <br><br>
+                <h3 id="resultados"></h3>
+            </div>
+            <br>
+        </div>
+        
+
+    <script>
+    function calcular(){
+        var codigo = parseInt(document.getElementById("codigo").value);
+
+
+        if (isNaN(codigo) || codigo==0 || codigo=="" || codigo>301){
+            document.getElementById("resultados").innerHTML = "Error: No hay clasificación."
+        } else if (codigo<=100){
+            document.getElementById("resultados").innerHTML = "El empleado número "+codigo+ " pertenece al Departamento de Informática."
+        } else if (codigo>100 && codigo<=200){
+            document.getElementById("resultados").innerHTML = "El empleado número "+codigo+ " pertenece al Departamento de Ventas."
+        } else if (codigo>200 && codigo<=300){
+            document.getElementById("resultados").innerHTML = "El empleado número "+codigo+ " pertenece al Departamento de Cobros."
+        }
+    }   
+
+    function reiniciar(){
+        document.getElementById('codigo').value = "";
+        document.getElementById("resultados").innerHTML = "";
+    }
+
+
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+</body>
+</html>

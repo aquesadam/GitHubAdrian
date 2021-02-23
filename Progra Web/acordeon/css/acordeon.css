@@ -1,0 +1,55 @@
+/* Estilo de los botones que se utilizan para abrir y cerrar el panel de acordeón */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: 2px #000 solid;
+  /*outline: none;*/
+  transition: 0.4s;
+}
+
+/* Agregar un color de fondo al botón si se hace clic en él (agregue la clase .active con JS) y cuando mueva el mouse sobre él (hover) */
+.active, .accordion:hover {
+  background-color: orange;  
+}
+
+/* Estilos al panel de acordeón. */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  border: 2px #000 solid;  
+  /*se agregaron para la animacion del panel*/
+  max-height: 0;
+  transition:max-height 0.1s ease-out;
+
+}
+
+
+
+
+
+/*web caracteres unicode hexadecimal*/
+/*https://www.oscarlijo.com/blog/tabla-de-caracteres-unicode/*/
+
+
+
+/* signos + y - acordeon */
+.accordion:after {
+  /* Carácter Unicode para el signo "más" (+) */
+  content: '\25BC';
+  /*content: '\02795'; */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  /* Carácter Unicode para el signo "menos" (-) */
+  content: '\25B2';
+  /*content: "\2796"; */
+}

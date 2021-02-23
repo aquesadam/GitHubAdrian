@@ -1,0 +1,64 @@
+html{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.col-a{
+    background: #f9ca24;
+}
+
+.col-b{
+    background: #f0932b;
+}
+
+.col-c{
+    background: #eb4d4b;
+}
+
+.col-d{
+    background: #6ab04c;
+}
+
+.col-e{
+    background: #22a6b3;
+}
+
+.sin-flex .col{
+    min-height: 50px; 
+}
+
+.sin-flex .col span{
+    color: #ffffff;
+    font-size: 1.375rem;
+    font-weight: bold;
+}
+
+.con-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+
+.con-flex .col{
+    min-height: 50px;
+    width: 15%;
+}
+
+.con-flex .col span{
+    color: #ffffff;
+    font-size: 1.375rem;
+    font-weight: bold;
+}
+
+.con-flex-col{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.con-flex-col .col span{
+    color: #ffffff;
+    font-size: 1.375rem;
+    font-weight: bold;
+}

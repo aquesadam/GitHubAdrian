@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<title>Reto 4</title>
+<link rel="shortcut icon" type="image/jpg" href="galeria/100.png"/>
+<style>
+    html{
+        height: 100%;
+    }
+    body{
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(10,50,70, 100)
+        ),url(galeria/fondo.jpg);
+        background-size: cover;
+}
+    .container{
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="container text-center bg-light">
+        <div class="row">
+        <div class="col-sm">
+            <div class="pt-2"></div>
+            <h1 class="text-primary">RETO NÚMERO 4</h1>
+            <h2 class="text-primary">ESTADO DE NOTA CON PROMPT</h2><hr/>
+            <div class="pt-3"></div>
+                <h3 id="resultados"></h3><br>
+                <input type="button" class="btn btn-secondary" id="btn" value="Reiniciar" onclick="reiniciar()"><br><br>
+            </div>
+            <br>
+        </div>
+        
+
+    <script>
+        var nota = prompt("Por favor digite su nota");
+
+        if (parseInt(nota)>=70 && parseInt(nota)<=100){
+            document.getElementById("resultados").innerHTML = "<p class='text-success'>Usted aprobó el curso. Felicidades!</p>"
+        } 
+        else if (parseInt(nota)>=60 && parseInt(nota)<=69){        
+            document.getElementById("resultados").innerHTML = "<p class='text-danger'>Usted reprobó el curso.</p>"
+        } 
+        else if (parseInt(nota)<60){
+            document.getElementById("resultados").innerHTML = "<p class='text-primary'>Usted tiene derecho a un examen extraordinario.</p>"
+        }
+        else{    
+            document.getElementById("resultados").innerHTML = "<p class='text-warning'>Error. Por favor utilice solo números iguales o menores a 100.</p>"
+        }
+
+        function reiniciar(){
+            window.location.reload();
+        }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+</body>
+</html>
