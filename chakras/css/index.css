@@ -3,7 +3,7 @@ html, body{
 }
 
 html img{
-    height: auto;
+    max-height: auto;
 }
 
 /* Banner Free shipping */
