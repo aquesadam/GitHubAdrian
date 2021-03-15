@@ -2,6 +2,10 @@ html, body{
     font-family: 'Poppins', sans-serif;
 }
 
+html img{
+    height: auto;
+}
+
 /* Banner Free shipping */
 #header-banner{
     width: 100%;
@@ -72,7 +76,7 @@ html, body{
 
 .carousel{
     height: 300px;
-    background-image: url(/chakras/imgs/carousel1.jpg);
+    background-image: url(imgs/carousel1.jpg);
     background-size:cover;
     background-repeat:no-repeat;
     background-position: center;
