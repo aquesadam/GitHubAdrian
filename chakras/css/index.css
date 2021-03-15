@@ -2,7 +2,7 @@ html, body{
     font-family: 'Poppins', sans-serif;
 }
 
-html img{
+html img, body img{
     height: auto !important;
 }
 
