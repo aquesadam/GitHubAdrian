@@ -550,14 +550,14 @@ input:focus{
 }
 
 #elephant1{
-    background-image: url(/chakras/imgs/elephant1.webp);
+    background-image: url(../imgs/elephant1.webp);
     background-size: cover;
     background-origin: content-box;
     background-repeat: no-repeat;
 }
 
 #elephant2{
-    background-image: url(/chakras/imgs/elephant2.webp);
+    background-image: url(../imgs/elephant2.webp);
     background-size: cover;
     background-origin: content-box;
     background-repeat: no-repeat;
@@ -568,7 +568,7 @@ input:focus{
 }
 
 #elephant3{
-    background-image: url(/chakras/imgs/elephant3.webp);
+    background-image: url(../imgs/elephant3.webp);
     background-size: cover;
     background-origin: content-box;
     background-repeat: no-repeat;
