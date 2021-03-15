@@ -1,0 +1,149 @@
+html{
+    font-family: var(--tipografia-principal);
+}
+
+#header-principal .superior{
+    align-items: center;
+    background: var(--turquesa-oscuro);
+    display: flex;
+    height: 71px;
+    justify-content: space-between;
+    padding: var(--padding-general);
+}
+
+#header-principal .superior .logo{
+    width: 20%;   
+}
+
+#header-principal .superior nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+#header-principal .superior nav a{
+    color: var(--enlaces-menu);
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-right: 1%;
+    text-decoration: none;
+}
+
+#header-principal .superior nav a:hover{
+    color: #fff;
+}
+
+#header-principal .inferior h1{
+    font-size:2.5rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-shadow: black 0.05em 0.05em 0.05em;
+}
+
+#header-principal .inferior p{
+    font-size:0.9375rem;
+}
+
+#header-principal .inferior{
+    align-items: center;
+    background-image: url(../css/Background.gif);
+    color: var(--blanco);
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    padding: var(--padding-general);
+    padding-top: 20px;
+}
+
+#header-principal .inferior .logo{
+    width: 235px;
+    height: 150px;
+}
+
+#header-principal .inferior .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Menu lateral */
+
+main{
+    background: #eceff1;
+    justify-content: space-between;
+    display: flex;
+    padding: var(--padding-general);
+    padding-top: 20px;
+}
+
+#menu-lateral{
+    width: 28%;
+}
+
+#menu-lateral header{
+    align-items: center;
+    background: var(--turquesa-oscuro);
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    width: 100%;
+}
+
+#menu-lateral header h2{
+    color: var(--blanco);
+    font-size: 1.375rem;
+    font-weight: bold;
+    text-shadow: black 0.05em 0.05em 0.05em;
+}
+
+#menu-lateral nav ul li{
+    align-items: center;
+    border-bottom: #f0f0f0 1px solid;
+    display: flex;
+    padding: 0 15px;
+    height: 44px;
+}
+
+#menu-lateral nav ul li a{
+    align-items: center;
+    color: #484848;
+    display: flex;
+    text-decoration: none;
+}
+
+#menu-lateral nav ul li a img{
+    height: 25.75px;
+    width: 20.25px;
+}
+
+/* Estilos main info */
+
+main article{
+    width: 63%;
+}
+
+main article h2{
+color: var(--titulo-color);
+font-size: 1.75rem;
+font-weight: bold;
+margin-bottom: 8px;
+}
+
+main article h3{
+    color: var(--titulo-color);
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+main article p{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+main article p a{
+    color: var(--enlaces-parrafo);
+    text-decoration: none;
+    font-weight: bold;
+}
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DOM ? addEventListener</title>
+    </head>
+    <body>
+        
+        <h1>Método addEventListener()</h1>
+        <button type="button" id="botontest">Texto de evento</button><br>
+        <!-- tecto que aparece cada vez que addEventListener dispara el evento -->
+        <p id="demo"></p>
+
+        <script>
+            // Variable que guarda el ID del boton
+            var x = document.getElementById('botontest');
+            // Registra un evento
+            x.addEventListener("mouseover", evento1);
+            x.addEventListener("click", evento2);
+            x.addEventListener("mouseout", evento3);
+
+            function evento1(){
+                document.getElementById('demo').innerHTML += "Evento Mouseover!<br>";
+            }
+            function evento2(){
+                document.getElementById('demo').innerHTML += "Evento Click!<br>";
+            }
+            function evento3(){
+                document.getElementById('demo').innerHTML += "Evento MouseOut!<br>";
+            }
+
+        </script>
+    </body>
+</html>

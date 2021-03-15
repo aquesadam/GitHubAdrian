@@ -1,0 +1,19 @@
+p {
+	
+}
+
+h1 {
+	color: purple;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: purple;
+	color: white;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+	padding: 10px 20px 10px 20px;
+	border-radius: 5px;
+}

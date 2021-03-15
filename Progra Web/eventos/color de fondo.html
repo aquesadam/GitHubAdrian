@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <style>
+            .cursor{
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Probar container-fluid -->
+        <section class="container">
+            <h2 id="titulo1" class="text-center display-2">Eventos Interactivos</h2>
+            <div class="text-center">
+                <!-- El logo tiene evento al dar click -->
+                <img src="logo.png" alt="logo" class="img-fluid cursor" onclick="cambiar1()">
+            </div>
+            <div class="pt-5"></div>
+
+            <div class="text-center">
+                <!-- Cambiar el evento onclick por onmouseover -->
+                <input type="button" value="fondo1" onmouseover="cambiar1()">
+                <input type="button" value="fondo2" onmouseover="cambiar2()">
+                <input type="button" value="fondo3" onmouseover="cambiar3()">
+                <input type="button" value="fondo4" onmouseover="cambiar4()">
+            </div>
+            
+            <div class="pt-5"></div>
+            <h1 class="text-center">LENGUAJES DE DESARROLLO WEB</h1>
+            <div class="pt-5"></div>
+            <h2>Aprendizaje en línea!</h2>
+            <div class="pt-3"></div>
+            <p>
+                Desarrollo web significa construir y mantener sitios web; es el trabajo que tiene lugar en un segundo plano y que etc.
+            </p>
+            <p>
+                <strong>Lenguaje HTML5</strong><br>
+                HTML5  es la última versión de HTML. El término representa dos conceptos diferentes:
+                Se trata de una nueva versión de HTML, con nuevos elementos, atributos y comportamientos.
+                Contiene un conjunto más amplio de tecnologías que permite a los sitios Web y a las aplicaciones ser más diversas y de gran alcance. A este conjunto se le llama HTML5 y amigos, a menudo reducido a HTML5 .
+                Diseñado para ser utilizable por todos los desarrolladores de Open Web, esta página referencía numerosos recursos sobre las tecnologías de HTML5, clasificados en varios grupos según su función.
+            </p>
+            <p>
+                <strong>Lenguaje CSS3</strong><br>
+                Mientras que el HTML nos permite definir la estructura de una página web, las hojas de estilo en cascada (Cascading Style Sheets, CSS) son las que nos ofrecen la posibilidad de definir las reglas y estilos de representación en diferentes dispositivos, ya sean pantallas de equipos de escritorio, portátiles, móviles, impresoras u otros dispositivos capaces de mostrar contenidos web.
+            </p>
+            <p>
+                <strong>Lenguaje Javascript</strong><br>
+                Javascript es un lenguaje que puede ser utilizado por profesionales y para quienes inician el desarrollo y diseño de sitios web. No requiere de compilación ya que el lenguaje funciona del lado del cliente, los navegadores son los encargados de interpretar este código.
+                Muchos confunden el Javascrip con el Java, pero ambos lenguajes son ddiferentes y tienen sus características singulares. Javascript tiene la ventaja de ser incorporado en cualquier página web, puede ser ejecutado sin la necesidad de instalar otro programa para ser visualizado.
+            </p>
+        </section>
+
+        <script>
+            function cambiar1(){
+                document.body.style.backgroundColor = 'lightblue';
+                document.getElementById("titulo1").style.color = '#fff';
+            }
+            function cambiar2(){
+                document.body.style.backgroundColor = '#1c97b8';
+                document.getElementById("titulo1").style.color = '#fff';
+            }
+            function cambiar3(){
+                document.body.style.backgroundColor = '#9c11ae';
+                document.getElementById("titulo1").style.color = '#fff';
+            }
+            function cambiar4(){
+                document.body.style.backgroundColor = '#e13e9a';
+                document.getElementById("titulo1").style.color = '#fff';
+            }
+        </script>
+    </body>
+</html>

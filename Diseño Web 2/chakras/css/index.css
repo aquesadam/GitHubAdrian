@@ -1,0 +1,968 @@
+html, body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Banner Free shipping */
+#header-banner{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #1f1f1f;
+    display: flex;
+    height: 21px;
+    padding: 12px 0px;
+}
+
+#header-banner p{
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Navbar principal */
+
+.header-menu{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    height: 68px;
+    padding: 10px 0px;
+}
+
+.main-icon{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-icon img{
+    height: 48px;
+}
+
+.menu-icon{
+    align-items: center;
+    width: 25%;
+    display: flex;
+    padding: 0px 16px;
+}
+
+.menu-icon img{
+    height: 16px;
+}
+
+.search-cart{
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 16px;
+    font-size: 25px;
+}
+
+.search-cart i{
+    padding: 0px 6px;
+}
+
+.fa-user-circle{
+    display: none;
+}
+
+/* Header carousel */
+
+.carousel{
+    height: 300px;
+    background-image: url(/chakras/imgs/carousel1.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-text{
+    width: 50%;
+    margin: 10px 0px;
+}
+
+.carousel-text h1{
+    font-size: 34px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.carousel-btn{
+    width: 140px;
+    height: 40px;
+    font-size: 11px;
+    color: #ffffff;
+    background-color: #56cfe1;
+    border: 0;
+    box-shadow: none;
+    padding: 0px 27px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* Seccion posters */
+
+.posters{
+
+    max-width: 100%;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.posters .posters-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    height: 54px;
+    margin: 18px 0px 10px;
+    width: 100%;
+}
+
+.posters-title h2{
+    font-size: 20px;
+}
+
+.posters-title p{
+    font-size: 14px;
+    color: #878787;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.posters img{
+    width: 100%;
+}
+
+.img-container{
+display: flex;
+}
+
+.posters .poster-item{
+    padding-top: 30px;
+}
+
+.shop-btn{
+    height: 40px;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: #56cfe1;
+    border: 0;
+    padding: 0px 27px;
+    font-weight: 700;
+    width: 100%;
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,.15);
+    font-family: 'Poppins', sans-serif;
+}
+
+.poster-info, .trending-info, .tapestry-info, .mugs-info, .masks-info{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.poster-info span{
+    color: #ffbc02;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.poster-info p{
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.poster-info h4{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#discount{
+    font-weight: 700;
+    color: #d01345;
+}
+
+#discount s{
+    font-weight: 400;
+    color: #212121;
+}
+
+.poster-footer, .trending-footer, .mugs-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.footer-btn{
+    height: 40px;
+    font-size: 11px;
+    color: #56cfe1;
+    background-color: #ffffff;
+    border: 1px solid #56cfe1;
+    font-weight: 400;
+    width: 234.41px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+}
+
+/* Section Trending,  Tapestry & Coffee Mugs */
+
+.trending, .tapestries, .mugs, .masks, .elephant{
+    padding: 13px 15px 30px 15px;
+    box-sizing: border-box;
+}
+
+.mugs{
+    padding-bottom: 0px;
+}
+
+.trending .trending-title, .tapestries .tapestry-title, .mugs .mugs-title, .masks .masks-title, .elephant .elephant-title{
+    margin-top: 13px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 20px;
+    align-items: center;
+}
+
+.tapestry-title h2, .mugs-title h2, .masks-title h2, .elephant-title h2{
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.tapestry-title p, .mugs-title p, .masks-title p, .elephant-title p{
+    color: #878787;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.trending-options{
+    height: 48px;
+    width: 100%;
+    font-size: 15px;
+    color: #878787;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.trending-options #tshirts{
+    color: black;
+    border: solid black 1px;
+    border-radius: 40px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.trending-list, .tapestry-list, .mugs-list, .masks-list, .elephant-list{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0px -5px;
+}
+
+.trending-info p, .tapestry-info p, .mugs-info p, .masks-info p{
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+.trending-info h4, .tapestry-info h4, .mugs-info h4, .masks-info h4{
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.428;
+}
+
+.tapestry-info h4, .tapestry-info p{
+    text-align: center;
+}
+
+.trending-item, .tapestry-item, .mugs-item, .masks-item{
+    width: 50%;
+    margin-top: 30px;
+    padding: 0px 5px;
+    box-sizing: border-box;
+}
+
+.trending img, .tapestries img, .mugs img, .masks img{
+    width: 100%;
+}
+
+.tapestry-list, .mugs-list{
+    display: flex;
+    justify-content: center;
+}
+
+.masks-list, .elephant-list{
+    justify-content: flex-start;
+}
+
+.tapestry-list .footer-btn{
+    margin-top: 40px;
+}
+
+/* Shipping banner */
+
+.shipping-banner{
+    background-color: #1f1f1f;
+    height: 364px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    padding: 0px 16px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.shipping-banner h3{
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    height: 20px;
+    font-style: italic;
+}
+
+.shipping-banner h2{
+    font-size: 50px;
+    margin: 30px 0px;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+}
+
+.shipping-banner span{
+    color: #56cfe1;
+}
+
+.banner-btn{
+    width: 117px;
+    height: 34px;
+    color: #ffffff;
+    background-color: #1f1f1f;
+    font-size: 10px;
+    border: 1px solid #ffffff;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+}
+
+/* Charity Banner */
+
+.charity-banner{
+    background-color: #ff61c3;
+    height: 332px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    padding: 0px 16px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.charity-banner h3{
+    margin-top: 30px;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    height: 20px;
+    font-weight: 700;
+}
+
+.charity-banner h2{
+    font-size: 18px;
+    margin: 30px 0px;
+    width: 100%;
+    text-align: center;
+    line-height: 1.428;
+}
+
+strong{
+    font-weight: 700;
+}
+
+/* Blog Section */
+
+.blog{
+    margin-top: 30px;
+    padding: 20px 15px 30px 15px;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+}
+
+.blog img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.blog-info h4{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #414141;
+}
+
+.blog-info p{
+    font-size: 15px;
+    line-height: 1.75;
+    color: #474747;
+}
+
+#author{
+    padding-bottom: 10px;
+}
+
+.blog-title{
+    margin-top: 13px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 20px;
+    align-items: center;
+}
+
+.blog-post{
+    margin-bottom: 40px;
+}
+
+.blog-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.blog-btn{
+    width: 146.25px;
+    height: 40px;
+    font-size: 11px;
+    color: #56cfe1;
+    background-color: #f7f7f7;
+    border: 1px solid #56cfe1;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+}
+
+/* Subscribe banner */
+
+.subscribe-banner{
+    width: 100%;
+    height: 293px;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 50px 0px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.subscribe-banner h3{
+    font-size: 20px;
+    margin: 13px 0px 10px 0px;
+    text-align: center;
+    padding: 0px 15px;
+}
+
+.subscribe-banner input{
+    width: 100%;
+    margin: 26px 0px;
+    color: #ffffff;
+    height: 40px;
+    border-style: none;
+    border-bottom: 1px solid #ffffff;
+    background-color: #1f1f1f;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+::placeholder{
+    color: #ffffff;
+}
+
+input:focus{
+    outline: none;
+}
+
+#signup{
+    background-color: #1f1f1f;
+    height: 40px;
+    width: 122px;
+}
+
+/* Elephant apparel */
+
+.elephant-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 182px;
+    margin-bottom: 10px;
+    padding: 0px 5px;
+    box-sizing: border-box;
+}
+
+.elephant-img{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    padding-bottom: 10%;
+}
+
+#elephant1{
+    background-image: url(/chakras/imgs/elephant1.webp);
+    background-size: cover;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+#elephant2{
+    background-image: url(/chakras/imgs/elephant2.webp);
+    background-size: cover;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+#elephant2 p{
+    height: 81px;
+}
+
+#elephant3{
+    background-image: url(/chakras/imgs/elephant3.webp);
+    background-size: cover;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+.elephant-img p{
+    display: flex;
+    width: 150px;
+    height: 62px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    color: #4d5959;
+    padding: 0px 10%;
+    box-sizing: border-box;
+    line-height: 1.428;
+    font-weight: 600;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(223, 223, 223);
+}
+
+/* Section icons */
+
+.icons{
+    padding: 0px 15px 30px 15px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.icons-item{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    margin-top: 30px;
+}
+
+#icons-item-lg{
+    height: 76px;
+}
+
+.icons-item i{
+    font-size: 36px;
+}
+
+.icons-img{
+    width: 15%;
+}
+
+.icons-text{
+    width: 85%;
+    align-items: center;
+}
+
+.icons-item h4{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.icons-item p{
+    color: #878787;
+    font-size: 15px;
+    line-height: 1.75;
+    text-align: left;
+}
+
+
+/* Bottom Menu */
+
+.bottom-menu{
+    background-color: #1f1f1f;
+    padding: 80px 15px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.bottom-menu h4{
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: 700;
+    height: 30px;
+}
+
+.bottom-menu p{
+    color: #808080;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.bottom-menu p i{
+    margin-right: 10px;
+}
+
+.bottom-menu i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.bottom-item{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bottom-item li{
+    margin-bottom: 5px;
+    color: #808080;
+    font-size: 15px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+}
+
+#sub-bottom{
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+
+#sub-bottom p{
+    width: 100%;
+}
+
+.sub-input{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #808080;
+    height: 40px;
+    border: 1px solid #808080;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.sub-input input{
+    width: 100%;
+    color: #808080;
+    height: 38px;
+    border-style: none;
+    background-color: #1f1f1f;
+    text-align: left;
+    border-radius: 50px;
+    padding-left: 10px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.sub-input input::placeholder{
+    color: #808080;
+}
+
+.btn-bottom{
+    min-width: 104.27px;
+    height: 32px;
+    padding: 0px 15px;
+    background-color: #56cfe1;
+    border-radius: 50px;
+    border: none;
+    color: #ffffff;
+    font-size: 13px;
+    font-family: 'Poppins', 'sans-serif';
+    letter-spacing: 3px;
+    margin-right: 5px;
+}
+
+
+/* Footer */
+
+.footer{
+    width: 100%;
+    padding: 22px 15px;
+    background-color: #474747;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    height: 176px;
+}
+
+
+.footer p{
+    color: #808080;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 1.75;
+}
+
+.footer span{
+    color: #56cfe1;
+}
+
+.footer img{
+    width: 28.42px;
+    height: 17.37px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+
+
+/* Otros */
+
+
+#fb{
+    color: #3b5998;
+}
+
+#pin{
+    color: #cb2027;
+}
+
+#insta{
+    color: #db437f;
+}
+
+#envelope{
+    font-size: 15px;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+    .fa-user-circle{
+        display: block;
+    }
+
+    .carousel{
+        padding: 0px 15px;
+        background-origin: content-box;
+        height: 414px;
+    }
+
+    .poster-item{
+        width: 31%;
+        padding: 0px 5px;
+    }
+
+    .posters-imgs{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .trending-options{
+        width: 50%;
+        margin: 0px 25%; 
+    }
+
+    .trending-list{
+        display: flex;
+        flex-wrap: wrap;  
+    }
+
+    .trending-item{
+        width: 33%;
+    }
+
+    .shipping-banner{
+        height: 322px;
+    }
+
+    .banner-btn{
+        width: 142px;
+        height: 42px;
+    }
+
+    .tapestry-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .tapestry-item{
+        width: 33%;
+    }
+
+    .tapestry-footer{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .charity-banner h3{
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    .mugs-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    .mugs-item{
+        width: 33%;
+    }
+
+    .mugs-footer{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .blog-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .blog-post{
+        width: 50%;
+    }
+
+    .masks-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .masks-item{
+        width: 33%;
+    }
+
+    .subscribe-banner{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .subscribe-banner h3{
+        font-size: 26px;
+    }
+
+    .subscribe-banner input{
+        width: 425px;
+    }
+    
+    .elephant-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .elephant-item{
+        width: 33%;
+        height: 236.83px;
+    }
+
+    #elephant3 p, #elephant1 p{
+        padding: 0px 5%;
+    }
+
+    .icons{
+        height: 240px;
+    }
+
+    .icons-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .icons-item{
+        width: 25%;
+    }
+
+    .icons-item h4, .icons-item p{
+        width: 70%;
+        margin-left: 20px;
+    }
+
+    .bottom-menu{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .bottom-item{
+        width: 50%;
+    }
+}

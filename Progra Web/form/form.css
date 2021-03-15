@@ -1,0 +1,37 @@
+label{
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+body{
+    background-color: gray;
+}
+
+input{
+    text-align: center;
+    font-size: 24px;
+}
+
+form{
+    color: #000000;
+    border: solid 1px rgb(42,102,151);
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+input:hover{
+    outline: 2px solid #2a9fde;
+}
+
+textarea:hover{
+    outline: 2px solid #2a9fde;
+}
+
+textarea{
+    height: 150px;
+    max-height: 150px;
+}
+
+h1{
+    border-radius: 0px 0px 10px 10px;
+}

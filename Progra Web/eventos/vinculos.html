@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <title>Vinculos #1</title>
+        <meta charset="utf-8">
+        <style>
+            .formato1{
+                font-size: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+      <section class="container">
+          <div class="text-center pt-3">
+              <img src="logo.png" alt="logo" class="img-fluid">
+          </div>
+          <br>
+          <p class="formato1">
+              Aprendizaje en línea! <br><br>
+              Desarrollo web significa construir y mantener sitios web; es el trabajo que tiene lugar en un segundo plano y que etc.
+          </p>
+
+          <div class="pt-5"></div>
+          <h5>Ejemplos #1</h5>
+          <p>
+              1) Enlace a página web <a href="evento2.html">Ir</a>
+          </p>
+          <hr><hr>
+
+          <h5>Ejemplo #2</h5>
+          <p>
+              2) Botón que llama a una función de Javascript que carga una página web:
+              <button class="btn btn-danger" onclick="avanza1()">Cargar página web</button>
+          </p>
+          <hr><hr>
+
+          <h5>Ejemplo #3</h5>
+          <p>
+              3) Botón que llama a una función de Javascript que carga un sitio web: 
+              <button class="btn btn-danger" onclick="avanza2()">Cargar sitio web</button>
+          </p>
+          <hr><hr>
+      </section>
+
+      <script>
+        //   Permite vincular una web (página o sitio)
+        function avanza1(){
+            location.href = "evento1.html"
+        }
+        function avanza2(){
+            window.open('https://www.ucenfotec.ac.cr','_blank');
+        }
+      </script>
+    </body>
+</html>

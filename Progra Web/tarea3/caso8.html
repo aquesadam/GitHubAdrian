@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<title>Caso 8</title>
+
+<style>
+    html{
+        min-height: 100%;
+    }
+    body{
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(10,50,70, 100)
+        );
+        background-size: cover;
+}
+    .container{
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="container text-center bg-light">
+        <div class="row">
+        <div class="col-sm">
+            <div class="pt-2"></div>
+            <h1 class="text-primary">CASO NÚMERO 8</h1>
+            <h2 class="text-primary">CÁLCULO DE MONTO SEGÚN AÑO Y FABRICANTE DEL AUTOMÓVIL</h2><hr/>
+            <div class="pt-5"></div>
+            <div class="formato1">
+                <h3 id="resultados"></h3><br><br>
+                <button class="btn btn-primary" onclick="location.reload()">Reiniciar la herramienta</button>
+            </div>
+            <br>
+        </div>
+      
+    <script>
+        var marca = prompt("Digite el fabricante de su vehículo:");
+        var marca = marca.toLowerCase();
+        var modelo = prompt("Digite el año de fabricación de su vehículo en formato 19XX:")
+        var modelo = parseInt(modelo);
+
+        if (isNaN(modelo)) {
+            alert("ERROR: utilice solo números.")
+            location.reload();
+        } else {
+            if (marca=="toyota" && modelo>1995) {
+            document.getElementById("resultados").innerHTML = "El monto a pagar por su vehículo es ₡5.000.000";
+            } else if (marca=="toyota" && modelo<=1995) {
+            document.getElementById("resultados").innerHTML = "El monto a pagar por su vehículo es ₡400.000";                                                               
+            } else if (marca!="toyota") {
+            document.getElementById("resultados").innerHTML = "El monto a pagar por su vehículo es ₡3.500.000";                                                               
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+</body>
+</html>

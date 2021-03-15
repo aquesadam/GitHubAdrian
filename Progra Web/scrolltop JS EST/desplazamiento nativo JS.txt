@@ -1,0 +1,25 @@
+
+<!-- agregar bloque al HTML -->
+
+<!-- desplazamiento suave nativo JS -->
+<script>
+    window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth'
+      });
+        
+      // Desplazarse ciertas cantidades desde la posición actual. arriba hacia abajo
+      window.scrollBy({
+        //se puede poner un valor negativo... 
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth' 
+      });
+      
+      // Desplazarse hasta un elemento determinado agregando una clase llamada aqui en <p> 
+      document.querySelector('.aqui').scrollIntoView({ 
+        behavior: 'smooth' 
+      });
+    </script>
+    

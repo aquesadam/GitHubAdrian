@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .formatos1{
+                background-color: #ccc;
+                font-family: "Arial Black";
+                font-size: 14px;
+            }
+            .formatos2{
+                background-color: yellow;
+                font-family: "Verdana";
+                font-size: 20px;
+                text-align: left;
+                border: medium solid blue;
+            }
+        </style>
+        <script>
+            function cambiar(){
+                var laClase= document.getElementById("parrafo").className;
+                if (laClase == "formatos1"){
+                    document.getElementById("parrafo").className = "formatos2";
+                } else{
+                    document.getElementById("parrafo").className = "formatos1";
+                }
+            } 
+        </script>
+    </head>
+
+    <body>
+        <h2>Clase CSS del párrafo con JS</h2>
+        <p id="parrafo">
+            Este párrafo va a cambiar de clase CSS usando Javascript.<br>
+        </p>
+        <button onclick="cambiar()">Cambiar de estilos</button>
+    </body>
+</html>
