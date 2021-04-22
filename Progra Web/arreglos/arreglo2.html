@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Arreglos</title>
+<meta charset="utf-8">
+</head>
+<body>
+    <h1>Lorem Ipsum</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Quibusdam iste suscipit alias natus voluptatibus!<br>
+        Pariatur soluta dolore debitis autem at illum,<br> 
+        ducimus exercitationem recusandae assumenda cum libero asperiores doloremque necessitatibus?
+    </p>
+    <h3>El resultado es el siguiente:</h3>
+    <div id="resultado1"></div>
+    <div id="resultado2"></div>
+
+    <script>
+        //metodo push: agrega un nuevo elemento al final del arreglo
+        const temp1 = []
+        temp1.push(37.5)
+        temp1.push(33.6)
+        temp1.push(28.6)
+        temp1.push(20.6)
+        temp1.push(50.5)
+        const result1 = document.getElementById("resultado1");
+        //convierte un objeto o valor en una cadena de texto JSON
+        result1.innerHTML = JSON.stringify(temp1)
+
+        //metodo unshift: agrega un nuevo elemento al comienzo del arreglo
+        const temp2 = []
+        temp2.unshift(37.5)
+        temp2.unshift(33.6)
+        temp2.unshift(28.6)
+        temp2.unshift(20.6)
+        temp2.unshift(50.5)
+        const result2 = document.getElementById("resultado2");
+        //convierte un objeto o valor en una cadena de texto JSON
+        result2.innerHTML = JSON.stringify(temp2)
+    </script>
+
+    </body>
+    </html>

@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">    
+        <link rel="stylesheet" href="css/home.css" type="text/css"></link>
+        <link rel="stylesheet" href="css/cristales.css" type="text/css"></link>
+        <link rel="icon" type="image/png" href="./css/imgs/favicon.jpg">
+    
+        <title>Joyería Gaia</title>
+    </head>
+    
+  <body>
+    <header>
+        <!-- Barra de navegación -->
+        <div class="navegacion container-fluid fixed-top">
+            <a class="logo btn" href="home.html"><img id="home-btn" src="./css/imgs/favicon.jpg" alt="GAIA">GAIA</a>
+            <div class="navlinks">
+                <ul>
+                    <li><a class="btn" href="cristales.html">Cristales</a></li>
+                    <li><a class="btn" href="joyeria.html">Joyería</a></li>
+                    <li><a class="btn" href="hogar.html">Hogar</a></li>
+                    <li><a class="btn" href="acerca.html">Acerca de</a></li>
+                    <li><a class="btn" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    <!-- Título principal de la página -->
+        <div class="row">
+            <div class="container-fluid text-center mt-5 mb-3">
+                <h1 class="mt-5 mb-3">CRISTALES EN BRUTO</h1>
+                <p>Experimenta nuestra selección de piedras y minerales de origen natural con garantía de producción ética. <br>Ya sea como decoración por sí mismos o como materia prima para tus propios proyectos, estos cristales potenciarán tu energía espiritual.</p>
+                <p>Aunque los beneficios son para todos, sentirás mayor afinidad por ciertos cristales dependiendo de tu signo zodiacal solar. Despliega cada sección para aprender más.</p>
+            </div>
+        </div>
+
+            <div class="section-acordeon row">
+            <!-- Sección de acordeones desplegables -->
+                <div class="col-2"></div>
+                <div class="col-8 text-center">
+                <!-- Contenido Lightbox-->
+                <div id="modal1" class="modal">
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+                    
+                    <!-- Desplegable 1 -->
+                    <button class="accordion btn btn-dark btn-lg col-12 mt-2" id="aries">Aries</button>
+                    <div class="panel col-12">
+                    <!-- Contenido oculto -->
+                        <div class="row d-flex justify-content-center pb-3">
+                            <img src="./css/imgs/aries.svg" alt="logo" class="img-fluid">
+                            <p>
+                                Las personas de este signo están buscando continuamente dinamismo, velocidad y competencia. 
+                                Son siempre los primeros en todo – desde el trabajo hasta en los eventos sociales.
+                            </p>
+                            <!-- Imagen Lightbox A -->
+                            <div class="col-6 d-flex justify-content-center img-a">
+                                <img src="./css/imgs/agatafuego.jpg" alt="Ágata de Fuego" class="myImg">  
+                            </div>
+                            <!-- Imagen Lightbox B -->
+                            <div class="col-6 d-flex justify-content-center img-b">
+                                <img src="./css/imgs/heliotropo.jpg" alt="Heliótropo" class="myImg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desplegable 2 -->
+                    <button class="accordion btn btn-dark btn-lg col-12 mt-2" id="tauro">Tauro</button>
+                    <div class="panel col-12">
+                    <!-- Contenido oculto -->
+                        <div class="row d-flex justify-content-center pb-3">
+                            <img src="./css/imgs/taurus.svg" alt="logo" class="img-fluid">
+                            <p>
+                                Los Tauro suelen ser conocidos por su terquedad, pero eso también puede ser visto como su total compromiso en la ejecución de sus proyectos. <br>
+                                Esto los convierte en excelentes trabajadores y muy buenos amigos, porque siempre estarán ahí, no importa lo que suceda.
+                            </p>
+                            <!-- Imagen lightbox A-->
+                            <div class="col-6 d-flex justify-content-center img-a">
+                                <img src="./css/imgs/cornalina.jpg" alt="Cornalina" class="myImg">
+                            </div>
+                            <!-- Imagen Lightbox B -->
+                            <div class="col-6 d-flex justify-content-center img-b">
+                                <img src="./css/imgs/rodonita.jpg" alt="Rodonita" class="myImg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desplegable 3 -->
+                    <button class="accordion btn btn-dark btn-lg col-12 mt-2" id="geminis">Géminis</button>
+                    <div class="panel col-12">
+                    <!-- Contenido oculto -->
+                        <div class="row d-flex justify-content-center pb-3">
+                            <img src="./css/imgs/geminis.svg" alt="logo" class="img-fluid">
+                            <p>
+                                Expresivos y de pensamiento rápido, Géminis representa dos lados diferentes de la personalidad.<br>
+                                A Géminis le preocupan todos los aspectos de la mente, y tienen la percepción de que no les alcanzará la vida entera para ver todo lo que quieren ver.
+                            </p>
+                            <!-- Imagen Lightbox A -->
+                            <div class="col-6 d-flex justify-content-center img-a">
+                                <img src="./css/imgs/citrino.jpg" alt="Citrino" class="myImg">
+                            </div>
+                            <!-- Imagen Lightbox B -->
+                            <div class="col-6 d-flex justify-content-center img-b">
+                                <img src="./css/imgs/ojotrigre.jpg" alt="Ojo de Tigre" class="myImg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desplegable 4 -->
+                    <button class="accordion btn btn-dark btn-lg col-12 mt-2" id="cancer">Cáncer</button>
+                    <div class="panel col-12">
+                    <!-- Contenido oculto -->
+                        <div class="row d-flex justify-content-center pb-3">
+                            <img src="./css/imgs/cancer.svg" alt="logo" class="img-fluid">
+                            <p>
+                                Profundamente intuitivo y sentimental, las personas nacidas en Cáncer son leales y empáticas, y suelen evitar los conflictos.
+                            </p>
+                            <!-- Imagen Ligthbox A -->
+                            <div class="col-6 d-flex justify-content-center img-a">
+                                <img src="./css/imgs/rubi.jpg" alt="Rubí" class="myImg">
+                            </div>
+                            <!-- Imagen Lightbox B -->
+                            <div class="col-6 d-flex justify-content-center img-b">
+                                <img src="./css/imgs/calcita.jpg" alt="Calcita" class="myImg">
+                            </div> 
+                        </div>
+                    </div>
+
+                    <!-- Desplegable 5 -->
+                    <button class="accordion btn btn-dark btn-lg col-12 mt-2" id="leo">Leo</button>
+                    <div class="panel col-12">
+                    <!-- Contenido oculto -->
+                        <div class="row d-flex justify-content-center pb-3">
+                            <img src="./css/imgs/leo.svg" alt="logo" class="img-fluid">
+                            <p>
+                                Las personas nacidas bajo el signo de Leo son líderes por naturaleza. Son dramáticos, creativos, seguros de sí mismos, dominantes y es extremadamente difícil resistirse a ellos.                        
+                            </p>
+                            <!-- Imagen Ligthbox A -->
+                            <div class="col-6 d-flex justify-content-center img-a">
+                                <img src="./css/imgs/peridotita.jpg" alt="Peridotita" class="myImg">
+                            </div>
+                            <!-- Imagen Lightbox B -->
+                            <div class="col-6 d-flex justify-content-center img-b">
+                                <img src="./css/imgs/esmeralda.jpg" alt="Esmeralda" class="myImg">
+                            </div> 
+                        </div>
+                    </div>
+
+                    <!-- Desplegable 6 -->
+                    <button class="accordion btn btn-dark btn-lg col-12 mt-2" id="virgo">Virgo</button>
+                    <div class="panel col-12">
+                    <!-- Contenido oculto -->
+                        <div class="row d-flex justify-content-center pb-3">
+                            <img src="./css/imgs/virgo.svg" alt="logo" class="img-fluid">
+                            <p>
+                                Las personas que nacen bajo el signo de Virgo suelen llevar vidas muy organizadas, e incluso siendo desorganizados, sus metas y objetivos suelen ser puntos bien definidos en sus mentes.                        
+                            </p>
+                            <!-- Imagen Ligthbox A -->
+                            <div class="col-6 d-flex justify-content-center img-a">
+                                <img src="./css/imgs/sugilita.jpg" alt="Sugilita" class="myImg">
+                            </div>
+                            <!-- Imagen Lightbox B -->
+                            <div class="col-6 d-flex justify-content-center img-b">
+                                <img src="./css/imgs/topacioazul.jpg" alt="Topacio Azul" class="myImg">
+                            </div> 
+                        </div>
+                    </div>
+
+                    <!-- Desplegable 7 -->
+                    <button class="accordion btn btn-dark btn-lg col-12 mt-2" id="libra">Libra</button>
+                    <div class="panel col-12">
+                    <!-- Contenido oculto -->
+                        <div class="row d-flex justify-content-center pb-3">
+                            <img src="./css/imgs/libra.svg" alt="logo" class="img-fluid">
+                            <p>
+                                A Libra le fascina la simetría y el balance. Los nacidos Libra prefieren la justicia y la igualdad y no son capaces de tolerar las injusticias. <br>
+                                Suelen estar rodeados de arte, música y espacios bellos.
+                            </p>
+                            <!-- Imagen Ligthbox A -->
+                            <div class="col-6 d-flex justify-content-center img-a">
+                                <img src="./css/imgs/tormalinarosa.jpg" alt="Tormalina Rosa" class="myImg">
+                            </div>
+                            <!-- Imagen Lightbox B -->
+                            <div class="col-6 d-flex justify-content-center img-b">
+                                <img src="./css/imgs/sunstone.jpeg" alt="Piedra del Sol" class="myImg">
+                            </div> 
+                        </div>
+                    </div>
+
+                    <!-- Desplegable 8 -->
+                    <button class="accordion btn btn-dark btn-lg col-12 mt-2" id="escorpio">Escorpio</button>
+                    <div class="panel col-12">
+                    <!-- Contenido oculto -->
+                        <div class="row d-flex justify-content-center pb-3">
+                            <img src="./css/imgs/escorpio.svg" alt="logo" class="img-fluid">
+                            <p>
+                                Los nacidos bajo el signo de Escorpio son personas apasionadas y asertivas. Son determinados y decisivos, siempre al tanto de la situación y con un prominente ingenio.
+                            </p>
+                            <!-- Imagen Ligthbox A -->
+                            <div class="col-6 d-flex justify-content-center img-a">
+                                <img src="./css/imgs/labradorita.jpg" alt="Labradorita" class="myImg">
+                            </div>
+                            <!-- Imagen Lightbox B -->
+                            <div class="col-6 d-flex justify-content-center img-b">
+                                <img src="./css/imgs/turquesa.jpg" alt="Turquesa" class="myImg">
+                            </div> 
+                        </div>
+                    </div>
+
+                    <!-- Desplegable 9 -->
+                    <button class="accordion btn btn-dark btn-lg col-12 mt-2" id="sagitario">Sagitario</button>
+                    <div class="panel col-12">
+                    <!-- Contenido oculto -->
+                        <div class="row d-flex justify-content-center pb-3">
+                            <img src="./css/imgs/sagitario.svg" alt="logo" class="img-fluid">
+                            <p>
+                                Sagitario es uno de los mayores viajeros de entre todos los signos del zodíaco. Su mente abierta y visión filosófica los motiva a vagar por el mundo en busca del sentido de la vida.<br> Sagitario es extrovertido, optimista y entusiasta, y le gustan cambios.
+                            </p>
+                            <!-- Imagen Ligthbox A -->
+                            <div class="col-6 d-flex justify-content-center img-a">
+                                <img src="./css/imgs/azurita.jpg" alt="Azurita" class="myImg">
+                            </div>
+                            <!-- Imagen Lightbox B -->
+                            <div class="col-6 d-flex justify-content-center img-b">
+                                <img src="./css/imgs/lapislazuli.jpg" alt="Lapis Lázuli" class="myImg">
+                            </div> 
+                        </div>
+                    </div>
+
+                    <!-- Desplegable 10 -->
+                    <button class="accordion btn btn-dark btn-lg col-12 mt-2" id="capricornio">Capricornio</button>
+                    <div class="panel col-12">
+                    <!-- Contenido oculto -->
+                        <div class="row d-flex justify-content-center pb-3">
+                            <img src="./css/imgs/capricornio.svg" alt="logo" class="img-fluid">
+                            <p>
+                                Cuando se trata de profesionalismo y de valores tradicionales, Capricornio es el primero.<br> Capricornio es práctico y se considera que es el signo más serio del zodíaco, posee una independencia que le permite tener avances significativos tanto en el plano personal como en los negocios.
+                            </p>
+                            <!-- Imagen Ligthbox A -->
+                            <div class="col-6 d-flex justify-content-center img-a">
+                                <img src="./css/imgs/fluorita.jpg" alt="Fluorita" class="myImg">
+                            </div>
+                            <!-- Imagen Lightbox B -->
+                            <div class="col-6 d-flex justify-content-center img-b">
+                                <img src="./css/imgs/agataazul.jpg" alt="Ágata Azul" class="myImg">
+                            </div> 
+                        </div>
+                    </div>
+
+                    <!-- Desplegable 11 -->
+                    <button class="accordion btn btn-dark btn-lg col-12 mt-2" id="acuario">Acuario</button>
+                    <div class="panel col-12">
+                    <!-- Contenido oculto -->
+                        <div class="row d-flex justify-content-center pb-3">
+                            <img src="./css/imgs/acuario.svg" alt="logo" class="img-fluid">
+                            <p>
+                                Los Acuario son tímidos y callados, pero al mismo tiempo, pueden ser excéntricos y enérgicos. Sin embargo, en ambos casos, son pensadores y muy intelectuales, y aman ayudar a otros.
+                            </p>
+                            <!-- Imagen Ligthbox A -->
+                            <div class="col-6 d-flex justify-content-center img-a">
+                                <img src="./css/imgs/granate.jpg" alt="Granate" class="myImg">
+                            </div>
+                            <!-- Imagen Lightbox B -->
+                            <div class="col-6 d-flex justify-content-center img-b">
+                                <img src="./css/imgs/amatista.jpg" alt="Amatista" class="myImg">
+                            </div> 
+                        </div>
+                    </div>
+
+                    <!-- Desplegable 12 -->
+                    <button class="accordion btn btn-dark btn-lg col-12 mt-2" id="piscis">Piscis</button>
+                    <div class="panel col-12">
+                    <!-- Contenido oculto -->
+                        <div class="row d-flex justify-content-center pb-3">
+                            <img src="./css/imgs/piscis.svg" alt="logo" class="img-fluid">
+                            <p>
+                                Las personas nacidas bajo el signo de Piscis tienen un entendimiento intuitivo del ciclo de la vida y por ello logran tener buenas relaciones con otros seres humanos.<br> Los Piscis son conocidos por su sabiduría, sin embargo Piscis puede tomar el rol de mártir para atraer la atención.
+                            </p>
+                            <!-- Imagen Ligthbox A -->
+                            <div class="col-6 d-flex justify-content-center img-a">
+                                <img src="./css/imgs/aguamarina.jpg" alt="Aguamarina" class="myImg">
+                            </div>
+                            <!-- Imagen Lightbox B -->
+                            <div class="col-6 d-flex justify-content-center img-b">
+                                <img src="./css/imgs/smithsonita.jpg" alt="Smithsonita Lavanda" class="myImg">
+                            </div> 
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-2"></div>
+            </div>
+
+
+    </main>
+
+    <footer class="footer mt-5">
+        <div class="row">
+            <p class="text-center">2021 Adrián Quesada @ UCenfotec</p>
+        </div>
+    </footer>
+
+
+    <script src="./js/acordeon.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  </body>
+</html>

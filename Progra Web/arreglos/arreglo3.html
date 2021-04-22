@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Arreglos</title>
+<meta charset="utf-8">
+</head>
+<body>
+    <h1>Lorem Ipsum</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Quibusdam iste suscipit alias natus voluptatibus!<br>
+        Pariatur soluta dolore debitis autem at illum,<br> 
+        ducimus exercitationem recusandae assumenda cum libero asperiores doloremque necessitatibus?
+    </p>
+    <h3>El resultado es el siguiente:</h3>
+    <div id="resultado1"></div>
+    <div id="resultado2"></div>
+    <div id="resultado3"></div>
+
+    <script>
+        const caja = [1,2,3,4,5,6,7,8,9]
+        const result1 = document.getElementById("resultado1")
+        //retorna el indice donde se encuentra el elemento pasado como parametro
+        //si el valor no existe el metodo retorna -1
+        result1.innerHTML = caja.indexOf(6);
+
+        const result2 = document.getElementById("resultado2")
+        //obtiene el valor del primer elemento de la matriz
+        result2.innerHTML = caja.find((num) => {
+            return num === 3
+        });
+
+        const result3 = document.getElementById("resultado3")
+        //devuelve el indice del primer elemento de un arreglo
+        result3.innerHTML = caja.findIndex((num) => {
+            return num === 5
+        })
+    </script>
+
+    </body>
+    </html>

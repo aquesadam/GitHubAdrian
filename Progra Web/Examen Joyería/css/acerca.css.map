@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAIgB,IAJZ,CACA,IAAI,CACA,IAAI,CACA,gBAAgB,CACZ,EAAE,CAAC;EACC,cAAc,EAAE,GAAG;CAGS;;ACFxC,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;EDNhD,AAIgB,IAJZ,CACA,IAAI,CACA,IAAI,CACA,gBAAgB,CACZ,EAAE,CAAC;IAGK,SAAS,EAAE,IAAI;IACf,cAAc,EAAE,GAAG;GAAK;;;AARhD,AAUY,IAVR,CACA,IAAI,CACA,IAAI,CAQA,MAAM,CAAC;EACH,WAAW,ECXX,aAAa,EAAE,KAAK,CAAC,UAAU;EDY/B,SAAS,EAAE,IAAI;CAAG",
+    "sources": [
+        "../sass/acerca.sass",
+        "../sass/_variables.sass"
+    ],
+    "names": [],
+    "file": "acerca.css"
+}

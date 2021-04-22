@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Arreglos</title>
+<meta charset="utf-8">
+</head>
+<body>
+    <h1>Lorem Ipsum</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Quibusdam iste suscipit alias natus voluptatibus!<br>
+        Pariatur soluta dolore debitis autem at illum,<br> 
+        ducimus exercitationem recusandae assumenda cum libero asperiores doloremque necessitatibus?
+    </p>
+    <h3>El resultado es el siguiente:</h3>
+    <div id="resultado1"></div>
+
+    <script>
+        //mala forma usando variables individuales
+        let tempEne = 35.5
+        let tempFeb = 30.9
+        let tempMar = 27.7
+        let tempAbr = 25.5
+        let tempMay = 40.5
+
+        //buena forma usando arreglos
+        const temp = []
+        temp[0] = 35.5
+        temp[1] = 30.9
+        temp[2] = 27.7
+        temp[3] = 25.5
+        temp[4] = 40.5
+        const result1 = document.getElementById("resultado1");
+        //convierte un objeto o valor en una cadena de texto JSON
+        result1.innerHTML = JSON.stringify(temp)
+    </script>
+</body>
+</html>

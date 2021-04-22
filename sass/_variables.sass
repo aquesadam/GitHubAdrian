@@ -1,0 +1,8 @@
+$fuente-logo: 'Montserrat Alternates', sans-serif !important
+$fuente-titulo: 'Crimson Pro', serif !important
+$color-footer: #555
+$gris-oscuro: #292b2c
+
+@mixin responsive($breakpoint)
+    @if $breakpoint == phone
+        @media only screen and (max-width: 992px) {@content}

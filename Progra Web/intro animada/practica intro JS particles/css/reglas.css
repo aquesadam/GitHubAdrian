@@ -1,0 +1,109 @@
+@media (max-width: 575px){
+    .fondo {
+        background-position: center;
+    }
+
+    .bajarEfecto {
+        padding-bottom: 150px;
+    }
+
+    .bajarContenido {
+        padding-top: 100px;
+    }
+
+    .boton1 {
+        margin: 0 0 0 0;
+    }
+
+    .boton2 {
+        margin: 0 0 0 0;
+    }
+}
+
+/*Celulares modernos*/
+@media (min-width: 576px) and (max-width:767px){
+    .queryBoton1 {
+        padding-left: 60px;
+    }
+
+    .queryBoton2 {
+        padding-right: 60px;
+    }
+
+    .fondo {
+        background-position: center;
+    }
+
+    .bajarContenido {
+        padding-top: 120px;
+      }
+
+    .bajarEfecto {
+        padding-bottom: 175px;
+    }
+
+    .boton1 {
+        margin: 0 0 0 0;
+    }
+
+    .boton2 {
+        margin: 0 0 0 0;
+    }
+}
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width:991px){
+    .queryBoton1 {
+        padding-left: 150px;
+    }
+
+    .queryBoton2 {
+        padding-right: 150px;
+    }
+
+    .bajarContenido {
+        padding-top: 140px;
+      }
+
+    .bajarEfecto {
+        padding-bottom: 150px;
+    }
+}
+
+/*Laptop*/
+@media (min-width: 992px) and (max-width:1199px){
+    .queryBoton1 {
+        padding-left: 275px;
+    }
+
+    .queryBoton2 {
+        padding-right: 275px;
+    }
+
+    .bajarContenido {
+        padding-top: 140px;
+      }
+
+    .bajarEfecto {
+        padding-bottom: 100px;
+    }
+}
+
+/*XL*/
+@media (min-width: 1200px){
+    .bajarContenido {
+        padding-top: 160px;
+      }
+
+    .queryBoton1 {
+        padding-left: 350px;
+    }
+
+    .queryBoton2 {
+        padding-right: 350px;
+    }
+
+    .bajarEfecto {
+        padding-bottom: 100px;
+    }
+}

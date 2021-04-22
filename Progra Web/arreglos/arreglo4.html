@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Arreglos</title>
+<meta charset="utf-8">
+</head>
+<body>
+    <h1>Lorem Ipsum</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Quibusdam iste suscipit alias natus voluptatibus!<br>
+        Pariatur soluta dolore debitis autem at illum,<br> 
+        ducimus exercitationem recusandae assumenda cum libero asperiores doloremque necessitatibus?
+    </p>
+    <h3>El resultado es el siguiente:</h3>
+    <div id="resultado1"></div>
+    <div id="resultado2"></div>
+    <br><br>
+    <div id="resultado3"></div>
+    <div id="resultado4"></div>
+
+    <script>
+       //pop() extrae el último elemento insertado en el arreglo
+       const caja = [100,5,10,15,20,25,30,50]
+       const result1 = document.getElementById("resultado1")
+       result1.innerHTML = caja
+       caja.pop();
+
+       const result2 = document.getElementById("resultado2")
+       result2.innerHTML = caja;
+
+       //shift() extrae el primer elemento en el arreglo
+
+       const result3 = document.getElementById("resultado3")
+       result3.innerHTML = caja
+       caja.shift();
+
+       const result4 = document.getElementById("resultado4")
+       result4.innerHTML = caja;
+    </script>
+
+    </body>
+    </html>

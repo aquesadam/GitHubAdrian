@@ -1,0 +1,19 @@
+@import "./_variables.sass"
+body
+    main
+        .row
+            .container-fluid
+                h1
+                    letter-spacing: 3px
+            .col-6
+                select
+                    font-family: $fuente-titulo
+                img
+                    padding: 10px
+                    max-width: 50vw
+                    border-radius: 25px
+                    border: none
+                    height: 0
+                    @include responsive (phone)
+                        max-width: 90vw
+                    

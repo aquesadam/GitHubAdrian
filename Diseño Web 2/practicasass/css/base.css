@@ -1,0 +1,313 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Cabin", sans-serif;
+}
+
+.btn {
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 3px;
+  padding: 7px 5px;
+  width: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #42dca3;
+  border-radius: 3px;
+  color: #42dca3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: "Cabin", sans-serif;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  width: 270px;
+}
+
+.btn:hover {
+  background: #42dca3;
+}
+
+.btn:hover a {
+  border: 1px solid #000;
+  border-radius: 3px;
+  color: #000;
+}
+
+header {
+  background-image: url("../imgs/bannerimg.jpg");
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+  padding: 30px 5%;
+}
+
+header nav .logo {
+  width: 10%;
+}
+
+header nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30%;
+}
+
+header nav .menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav .menu a:hover {
+  color: #42dca3;
+}
+
+header .title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60vh;
+}
+
+header .title h1 {
+  font-size: 6.25rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 45%;
+}
+
+header .title p {
+  font-size: 1.125rem;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+header .title .btn-flecha {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 40px;
+}
+
+.hvr-fade {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+
+.monte-nevado, .contacto, .reservaciones {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50vh;
+  padding: 12vh 20%;
+  text-align: center;
+  width: 100%;
+}
+
+.monte-nevado h2, .contacto h2, .reservaciones h2 {
+  padding-bottom: 40px;
+  font-size: 32px;
+}
+
+.monte-nevado p, .contacto p, .reservaciones p {
+  padding-bottom: 40px;
+  font-size: 18px;
+}
+
+.monte-nevado p span, .contacto p span, .reservaciones p span {
+  color: #42dca3;
+}
+
+.descuento {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.01))), url("../imgs/descuentoimg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.01)), url("../imgs/descuentoimg.jpg");
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50vh;
+  padding: 15vh 20%;
+  text-align: center;
+  width: 100%;
+}
+
+.descuento h2 {
+  font-size: 40px;
+  padding-bottom: 40px;
+}
+
+.descuento p {
+  padding-bottom: 40px;
+  font-size: 18px;
+}
+
+.contacto .btn-contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacto .btn-contacto .btn {
+  width: 180px;
+}
+
+.contacto .btn-contacto i {
+  margin-right: 8px;
+}
+
+.reservaciones {
+  height: 85vh;
+  padding: 0 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.reservaciones label {
+  font-size: 18px;
+  width: 100%;
+}
+
+.reservaciones input {
+  height: 30px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.reservaciones .moneda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.reservaciones .moneda p {
+  padding-bottom: 30px;
+}
+
+.reservaciones .moneda input {
+  height: auto;
+  width: 50px;
+}
+
+.reservaciones .moneda .moneda-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.reservaciones .moneda #tyc {
+  margin-top: 40px;
+}
+
+.reservaciones .btn {
+  width: 180px;
+}
+
+footer {
+  height: 5vh;
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+}
+
+footer p {
+  color: #fff;
+  font-size: 14px;
+}
+/*# sourceMappingURL=base.css.map */

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Arreglos</title>
+<meta charset="utf-8">
+</head>
+<body>
+    <h1>Lorem Ipsum</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Quibusdam iste suscipit alias natus voluptatibus!<br>
+        Pariatur soluta dolore debitis autem at illum,<br> 
+        ducimus exercitationem recusandae assumenda cum libero asperiores doloremque necessitatibus?
+    </p>
+    <h3>El resultado es el siguiente:</h3>
+    <div id="resultado1"></div>
+    <div id="resultado2"></div>
+
+    <script>
+        const caja = ["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"]
+
+        const result1 = document.getElementById("resultado1")
+        result1.innerHTML = caja
+
+        const result2 = document.getElementById("resultado2")
+        caja.splice(2,1);
+        caja.pop();
+        caja.pop();
+        caja.pop();
+        caja.shift();
+
+        console.log(caja);
+        result2.innerHTML = JSON.stringify(caja);
+
+    </script>
+
+    </body>
+    </html>

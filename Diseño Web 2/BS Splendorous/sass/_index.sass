@@ -1,0 +1,145 @@
+body
+    font-family: 'Lato', sans-serif
+    margin: 40px 20px 0px 20px
+
+#header-principal
+    border-top: 4px solid $morado
+    height: 90px
+    .logo
+        p:first-child
+            color: $lila
+            font-size: 1.375rem
+        p:last-child
+            color: $gris-texto
+            font-size: 0.75rem
+    nav
+        div
+            height: 90px
+            &:hover
+                background: $morado
+                a
+                    color: $gris
+            a
+                color: $gris-texto
+                text-decoration: none
+                
+                
+.sct-banner
+    .img-container
+        background-image: url('../img/bakground.png')
+        background-size: cover
+        background-position: center
+        border: 20px solid $morado
+        border-radius: 50%
+        height: 380px
+        padding: 0
+        width: 380px
+    .flecha
+        i
+            color: $morado
+            font-size: 1.625rem
+            &:hover
+                color: $gris-texto
+
+#boton
+    background-color: #fff
+    color: $morado        
+    border: 1px solid $morado
+    &:hover
+        background-color: $morado
+        color: #fff
+
+.sct-projects
+    margin: 0px 0px 50px 0px
+    h2
+        color: $negro
+        border-bottom: 1px solid $gris
+        font-size: 1rem
+        font-weight: bold
+    .card-project
+        header
+            background: $gris
+            border-radius: 6px 6px 0px 0px
+            color: $negro
+            height: 50px
+            h3
+                font-size: 0.875rem
+                font-weight: bold
+                margin: 0
+        .img-container
+            img
+                width: 100%
+        footer
+            background: $gris
+            border-radius: 0px 0px 6px 6px
+
+            height: 50px
+            p
+                color: $gris-texto
+                font-size: 0.75rem
+                margin: 0
+        &:hover
+            header
+                background: $morado
+                h3
+                    color: $gris
+            footer
+                background: $morado
+                p
+                    color: $gris
+    
+.sct-blog-about
+    .blog
+        h2
+            color: $negro
+            border-bottom: 1px solid $gris
+            font-size: 1rem
+            font-weight: bold
+        .blog-posts
+            .card-post
+                .img-container
+                    background: $gris-texto
+                    margin-bottom: 25px
+                    max-height: 55%
+                    width: 100%
+                    img
+                        max-height: 225px
+                footer
+                    h3
+                        color: $morado
+                        font-size: 1rem
+                        font-weight: bold
+                    p
+                        color: $gris-texto
+                        font-size: 0.875rem
+    .about
+        h2
+            color: $negro
+            border-bottom: 1px solid $gris
+            font-size: 1rem
+            font-weight: bold
+        .row
+            border-bottom: 1px solid $gris
+            padding-bottom: 10px
+            .img-container
+                border: 1px solid $gris
+                height: 100%
+                padding: 5px
+                width: 25%
+
+            .profile
+                h4
+                    color: $gris-texto
+                    font-size: 1rem
+                    font-weight: bold
+                    margin-bottom: 0px
+                    margin-top: 10px
+                p
+                    color: $gris-texto
+                    font-size: 0.875rem
+                    margin: 0
+                a
+                    color: $morado
+                    font-size: 0.875rem
+                    text-decoration: none
+

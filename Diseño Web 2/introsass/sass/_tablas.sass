@@ -1,0 +1,41 @@
+.tabla
+    width: 700px
+
+    thead
+        background: $morado-encabezado
+        width: 700px
+        height: 30px
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        align-items: center
+        text-align: left
+
+        tr
+            #titulo
+                width: 4000px
+            
+            th
+                color: #ffffff
+                width: 20%
+            
+    tbody
+        width: 700px
+        height: 100px
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        align-items: center
+
+        tr:nthchild(even)
+            background: $morado-filas
+        
+        tr
+            width: 700px
+
+            #titulo
+                width: 4000px
+
+            td
+                width: 20%
+        

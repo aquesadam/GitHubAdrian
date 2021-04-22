@@ -1,0 +1,211 @@
+#home-btn {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  margin-left: 0px;
+  max-height: 40px;
+}
+
+#home-btn:hover {
+  -webkit-filter: invert(80%);
+          filter: invert(80%);
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), url("../css/imgs/crystal-wp.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../css/imgs/crystal-wp.jpg");
+  background-attachment: fixed;
+  width: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  background-blend-mode: luminosity;
+  margin: 0;
+  padding: 0;
+}
+
+body header .navegacion {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#181818), to(#292b2c));
+  background-image: linear-gradient(#181818, #292b2c);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 6.5vh;
+}
+
+body header .navegacion .logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat Alternates", sans-serif !important;
+  font-size: 24px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  width: 10%;
+}
+
+@media only screen and (max-width: 992px) {
+  body header .navegacion .logo {
+    margin: 0px 10px 0px -15px;
+  }
+  body header .navegacion .logo img {
+    display: none;
+  }
+}
+
+body header .navegacion .navlinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 90%;
+}
+
+body header .navegacion .navlinks ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  body header .navegacion .navlinks ul {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: -20px;
+  }
+  body header .navegacion .navlinks ul a {
+    padding-left: 0px;
+  }
+}
+
+body header .navegacion .navlinks ul li a {
+  color: #fff;
+  font-family: "Crimson Pro", serif !important;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+body header .navegacion .navlinks ul li a:hover {
+  color: purple;
+}
+
+@media only screen and (max-width: 992px) {
+  body header .navegacion .navlinks ul li a {
+    font-size: 16px;
+    padding-right: 10px;
+  }
+}
+
+body main {
+  min-height: 85vh;
+}
+
+body main .row .container-fluid h1 {
+  font-family: "Montserrat Alternates", sans-serif !important;
+  font-size: 84px;
+  letter-spacing: 18px;
+}
+
+body main .row .container-fluid p {
+  font-family: "Crimson Pro", serif !important;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  body main .row .container-fluid p {
+    font-size: 18px;
+  }
+}
+
+body main .row .container-fluid p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: purple;
+}
+
+body main .row {
+  margin: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  body main .row .col-2 {
+    padding: 0;
+  }
+}
+
+body main .row .col-2 button {
+  border-radius: 50px;
+  font-size: 32px;
+  height: 75px;
+  padding-bottom: 12px;
+  width: 75px;
+}
+
+@media only screen and (max-width: 992px) {
+  body main .row .col-2 button {
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  body main .row .col-8 {
+    margin-top: 5vh;
+  }
+}
+
+body main .row .col-8 .img-container {
+  position: relative;
+  text-align: center;
+}
+
+body main .row .col-8 .img-container img {
+  max-height: 706px;
+  -webkit-transition: -webkit-filter 0.3s ease-out;
+  transition: -webkit-filter 0.3s ease-out;
+  transition: filter 0.3s ease-out;
+  transition: filter 0.3s ease-out, -webkit-filter 0.3s ease-out;
+}
+
+body main .row .col-8 .img-container .masinfo a {
+  color: #FFF;
+  font-family: "Crimson Pro", serif !important;
+  font-size: 42px;
+  height: 100%;
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  text-decoration: none;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+  width: 80%;
+}
+
+body footer p {
+  color: #555;
+}
+/*# sourceMappingURL=home.css.map */

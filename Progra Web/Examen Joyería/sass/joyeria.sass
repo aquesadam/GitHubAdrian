@@ -1,0 +1,73 @@
+@import "./_variables.sass"
+
+body
+    main
+        .row
+            .container-fluid
+                h1
+                    font-size: 64px
+                    letter-spacing: 2px
+                    @include responsive(phone)
+                        font-size: 58px
+        #collaresActive
+            background-image: linear-gradient(#008282, $gris-oscuro)
+        #anillosActive
+            background-image: linear-gradient(#6A006A, $gris-oscuro)
+        #aretesActive
+            background-image: linear-gradient(#A1A100, $gris-oscuro)
+
+        .tab
+            overflow: hidden
+            border: 2px solid #ccc
+            border-radius: 10px 10px 0 0
+            background: rgb(235,235,235)
+            background-image: linear-gradient(rgb(24, 24, 24), $gris-oscuro)
+            button
+                background-color: transparent
+                float: left
+                font-family: $fuente-titulo
+                color:#fff
+                border: none
+                outline: none
+                cursor: pointer
+                padding: 14px 16px
+                transition: 0.3s
+                &:hover
+                    color:#a1a1a1
+        .tam1
+            font-size: 24px
+        .tabcontent
+            display: none
+            padding: 6px 12px
+            border: 2px solid #ccc
+            border-top: none
+            background: #eee
+            border-radius: 0 0 10px 10px
+            .card
+                font-family: $fuente-titulo
+                font-size: 22px
+                padding: 20px
+                width: 40%
+                margin-bottom: 10px
+                @include responsive(phone)
+                    width: 100%
+                
+                img
+                    width: 80%
+                .card-body
+                    p
+                        span
+                            font-weight: bold
+                
+
+
+
+
+
+// /* Crear una clase tablink activa / actual */
+// .tab button.active {
+//   background-color: #d7f3bd;
+//   color:#fff;
+// }
+
+

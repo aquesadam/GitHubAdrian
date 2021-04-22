@@ -1,0 +1,70 @@
+body main .row .container-fluid h1 {
+  letter-spacing: 6px;
+}
+
+@media only screen and (max-width: 992px) {
+  body main .row .container-fluid h1 {
+    font-size: 48px;
+    letter-spacing: 2px;
+  }
+}
+
+body main .row .col-10 .form-group .col-12 input {
+  font-family: "Crimson Pro", serif !important;
+  font-size: 18px;
+}
+
+body main .row .col-10 .form-group .col-12 input::-webkit-input-placeholder {
+  font-family: "Crimson Pro", serif !important;
+  font-size: 18px;
+}
+
+body main .row .col-10 .form-group .col-12 input:-ms-input-placeholder {
+  font-family: "Crimson Pro", serif !important;
+  font-size: 18px;
+}
+
+body main .row .col-10 .form-group .col-12 input::-ms-input-placeholder {
+  font-family: "Crimson Pro", serif !important;
+  font-size: 18px;
+}
+
+body main .row .col-10 .form-group .col-12 input::placeholder {
+  font-family: "Crimson Pro", serif !important;
+  font-size: 18px;
+}
+
+body main .row .col-10 .form-group .col-12 textarea {
+  font-family: "Crimson Pro", serif !important;
+  font-size: 18px;
+}
+
+body main .row .col-10 .form-group .col-12 textarea::-webkit-input-placeholder {
+  font-family: "Crimson Pro", serif !important;
+  font-size: 18px;
+}
+
+body main .row .col-10 .form-group .col-12 textarea:-ms-input-placeholder {
+  font-family: "Crimson Pro", serif !important;
+  font-size: 18px;
+}
+
+body main .row .col-10 .form-group .col-12 textarea::-ms-input-placeholder {
+  font-family: "Crimson Pro", serif !important;
+  font-size: 18px;
+}
+
+body main .row .col-10 .form-group .col-12 textarea::placeholder {
+  font-family: "Crimson Pro", serif !important;
+  font-size: 18px;
+}
+
+body main .row .col-10 .form-group .col-12 .form-check label {
+  font-family: "Crimson Pro", serif !important;
+  font-size: 18px;
+}
+
+body main .row .col-10 .form-group .col-12 button {
+  font-family: "Crimson Pro", serif !important;
+}
+/*# sourceMappingURL=contacto.css.map */
